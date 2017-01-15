@@ -1,0 +1,14 @@
+Steps to install MongoDB on Windows
+  - Go to https://www.mongodb.com/download-center#community download lasted MongoDB.
+  - Choose 64 bit version
+  - Install MongoDB by choosing Completed method.
+  - By defaut MongoDB will be installed in C:\Program Files\MongoDB\Server 3.0\bin
+  - You can change the installed path by chossing Advance method.
+  - Once installed completed, navigate to <MongoDB home directory>\bin . You would see a list of executed files. Ensure mongo and mongod is there.
+  - Next is update mongo bin directory into window environment variable.
+  - Open window environment variable and edit path variable by adding --> D:\MongoDB\bin **This is depend on your mongodb home directory location
+  - Next is to create folders to store database file and log. Example MKDIR D:\MongoDB\data MKDIR D:\MongoDB\data\log
+  - Now is ready to start mongodb.
+  - Open command prompt, and enter 'mongod --dbpath D:\MongoDB\data' **dbpath is depend on the location which setup to stored database files
+  - Next is open another command prompt and enter 'mongo'
+  - MongoDB is ready to use !
